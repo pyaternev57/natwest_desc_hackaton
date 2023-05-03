@@ -1,0 +1,8 @@
+.venv/*
+keys/*
+files/*
+hrgen/hrgen/__pycache__/*
+hrgen/hrgen/templatetags/__pycache__/*
+hrgen/hrgen/migrations/*
+hrgen/*.sqlite3
+poetry.lock

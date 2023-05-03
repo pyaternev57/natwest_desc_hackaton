@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% load markdown_extras %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h2>Positions</h2>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                  <th scope="col">Job title </th>
+                  <th scope="col">Years of experience</th>
+                  <th scope="col"> Skills </th>
+                  <th scope="col"> # </th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for position in object_list %}
+                    <tr>
+                        <td> {{ position.job_title }} </td>
+                        <td> {{ position.yoe }} </td>
+                        <td> {{ position.skills }} </td>
+                        <td class="text-center"> 
+                        <a class="btn btn-light" href="{% url 'position' position.id %}"> Open </a> 
+                        </td>
+                    </tr>
+                {% endfor %}
+              </tbody>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

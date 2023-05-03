@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% load markdown_extras %}
+
+{% block title %}  Generate description {% endblock %}
+
+{% block content %}  
+
+<div class="container">
+    <div class="row p-3">
+        <div class="card p-1">
+            <div class="card-body">
+                <h2 class="card-title"> Job description generation </h2>
+                <p class="card-text"> Generate job description based on title and required skills </p>
+                <a href="/generate" class="card-link"> Go for it</a>
+                <a href="/positions" class="card-link"> History </a>
+            </div>
+        </div>
+            <div class="card p-1">
+                <div class="card-body">
+                    <h2 class="card-title"> Resume summary generation </h2>
+                    <p class="card-text"> Generate summary from text extracted from resume </p>
+                    <a href="/summary" class="card-link"> Go for it</a>
+                </div>
+            </div>
+            <div class="card p-1">
+                <div class="card-body">
+                    <h2 class="card-title"> Interview questions generator </h2>
+                    <p class="card-text"> Generate questions based on job description </p>
+                    <a href="/interview-select" class="card-link"> Go for it</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

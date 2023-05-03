@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "natwest-dsec"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "natwest_dsec"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.27.4"
+ipython = "^8.12.0"
+google-cloud-documentai = "^2.15.0"
+tabulate = "^0.9.0"
+google-api-python-client = "^2.86.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^1.0.0"
+django = "^4.2"
+django-bootstrap5 = "^23.1"
+markdown = "^3.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
